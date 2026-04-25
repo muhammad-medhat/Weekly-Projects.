@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Workshop Feedback</title>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+  </head>
+  <body>
+    <h1>Community Workshop Feedback</h1>
+    <!-- Adding a short purpose line -->
+    <p>
+      Watch our short workshop promo and share your feedback. This page helps us
+      improve future sessions based on your input.
+    </p>
+
+    <!-- Video with captions -->
+    <video controls>
+      <source src="promo.mp4" type="video/mp4" />
+      <track
+        src="captions.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English"
+        default />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Feedback Form -->
+    <form>
+      <!-- Personal Info -->
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="3"
+          maxlength="50" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </fieldset>
+
+      <!-- Feedback -->
+      <fieldset>
+        <legend>Feedback</legend>
+
+        <label for="comments">Your Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          required
+          minlength="10"
+          maxlength="300"
+          rows="5"></textarea>
+      </fieldset>
+
+      <!-- Submit -->
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </body>
+</html>

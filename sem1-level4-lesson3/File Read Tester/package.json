@@ -1,0 +1,10 @@
+{
+  "name": "File Read Tester",
+  "lockfileVersion": 3,
+  "requires": true,
+  "type": "module",
+  "packages": {},
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}

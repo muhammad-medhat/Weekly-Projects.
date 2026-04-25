@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form with Multimedia</title>
+  </head>
+  <body>
+    <!-- 
+    - Create a form with semantic HTML tags.
+    - Group related inputs with <fieldset> and <legend>.
+    - Add basic HTML validation (required fields, email type, minlength).
+    - Embed a video with controls and a poster image.
+    - Review for clarity, structure, and accessibility. 
+    -->
+    <h1>Feedback Form</h1>
+    <form action="/submit-feedback" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="feedback">Your Feedback:</label><br />
+        <textarea
+          id="feedback"
+          name="feedback"
+          rows="4"
+          cols="50"
+          required></textarea
+        ><br /><br />
+      </fieldset>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <h2>Watch Our Introduction Video</h2>
+    <video controls poster="poster-image.jpg" width="600">
+      <source src="introduction-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>

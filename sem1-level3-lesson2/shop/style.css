@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  display: inline-block;
+  width: 30%;
+  /* height: 260px; */
+  margin: 1%;
+  padding: 15px;
+  background: #fff;
+  border: 2px solid #ccc;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/* Title */
+.card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.card p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Image left */
+.card img {
+  float: left;
+  margin-right: 10px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+/* Button fix */
+.card button {
+  display: block;
+  margin-top: 10px;
+  clear: both;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Alignments + overflow */
+.card1 p {
+  text-align: left;
+  overflow: visible;
+}
+
+.card2 p {
+  text-align: center;
+  overflow: hidden;
+}
+
+.card3 p {
+  text-align: right;
+  overflow: scroll;
+}

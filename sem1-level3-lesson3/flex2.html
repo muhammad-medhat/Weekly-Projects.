@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+      background: lightgray;
+      padding: 10px;
+    }
+
+    .item {
+      background: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* grows normally */
+    .small {
+      flex: 1 1 100px;
+    }
+
+    /* grows more */
+    .big {
+      flex: 2 1 100px;
+    }
+
+    /* fixed size (no shrink) */
+    .fixed {
+      flex: 1 0 150px;
+      background: orange;
+    }
+  </style>
+  <body>
+    <h2>Flex Example</h2>
+
+    <div class="container">
+      <div class="item small">Small</div>
+      <div class="item big">Big</div>
+      <div class="item fixed">Fixed</div>
+    </div>
+  </body>
+</html>

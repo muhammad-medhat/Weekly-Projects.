@@ -1,0 +1,25 @@
+/* Element selector (general styling) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* Class selector */
+.quote-box {
+  width: 60%; /* relative width */
+  margin: 100px auto; /* center horizontally */
+  padding: 20px; /* inner spacing */
+
+  background-color: #ffffff; /* hex */
+  border: 3px solid rgb(100, 100, 255); /* rgb */
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+/* Combined selector (ID + element) */
+#main-quote p {
+  color: navy; /* named color */
+  font-size: 20px;
+  line-height: 1.5;
+}

@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  gap: 10px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.text {
+  flex: 1;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+
+/* Alignment */
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+/* Overflow behavior */
+.visible {
+  overflow: visible;
+}
+.hidden {
+  overflow: hidden;
+  height: 100px;
+}
+.scroll {
+  overflow: auto;
+  height: 100px;
+}

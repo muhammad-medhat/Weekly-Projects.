@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  text-align: center; /* helps inline-block spacing */
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.content1 {
+  overflow: hidden; /* clearfix for float */
+}
+
+img {
+  /* float: left; */
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  /* object-fit: cover; */
+}
+
+.text {
+  /* border: solid red; */
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+}
+.text p:nth-child(3) {
+  margin-top: 10px;
+  padding: 0.75rem;
+  border: solid 1px;
+  background-color: #efefef;
+}
+span,
+.price {
+  font-weight: bold;
+  /* margin-right: 5px; */
+}
+span::after {
+  content: ":";
+}
+
+button {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+
+/* Alignment */
+.left button,
+.left .text {
+  text-align: left;
+}
+.center button,
+.center .text {
+  text-align: center;
+}
+.right button,
+.right .text {
+  text-align: right;
+}
+
+/* Overflow behavior */
+.visible {
+  overflow: visible;
+}
+
+.hidden {
+  overflow: hidden;
+  height: 100px;
+}
+
+.scroll {
+  overflow: auto;
+  height: 100px;
+}
+
+.badge {
+  /* padding: 2px 8px;
+    border: solid 1px;
+    display: inline-block;
+    float: right;
+    border-radius: 5px; */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgb(14, 116, 14);
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.badge.new {
+  background: #000;
+}
+.badge.sale {
+  background: #c6c316;
+}
