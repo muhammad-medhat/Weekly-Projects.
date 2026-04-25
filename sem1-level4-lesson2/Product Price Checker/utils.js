@@ -2,7 +2,6 @@
 // utils.js — Complete the two functions below
 // ─────────────────────────────────────────────
 
-
 // ─────────────────────────────────────────────
 // TASK 1: Write an arrow function called displayUser
 // It receives a user object
@@ -12,9 +11,9 @@
 
 export const displayUser = (user) => {
   // your code here
-
+  const { name, email } = user;
+  console.log(`Name: ${name} | Email: ${email}`);
 };
-
 
 // ─────────────────────────────────────────────
 // TASK 2: Write an arrow function called addUser
@@ -24,5 +23,5 @@ export const displayUser = (user) => {
 
 export const addUser = (users, newUser) => {
   // your code here
-
+  return [...users, newUser];
 };
