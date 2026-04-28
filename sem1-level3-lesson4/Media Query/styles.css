@@ -1,0 +1,42 @@
+/* base phone <600px */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 16px sans-serif;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+}
+
+/* small tablet, large phone landscape >=600px */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* medium tablet, small desktop >=900px */
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* large desktop >=1200px */
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: lightgray;
+  font: 1.5rem sans-serif;
+}

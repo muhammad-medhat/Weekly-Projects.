@@ -1,0 +1,28 @@
+.container {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  grid-auto-flow: row dense;
+  /* grid-auto-rows: 80px;  */
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: lightgray;
+  font: 1.5rem sans-serif;
+}
+.sp {
+  grid-column: 3 span;
+}
+/* .card:nth-child(1) {
+  grid-column: span 2;
+}
+.card:nth-child(2) {
+  grid-row: span 2;
+}
+.card:nth-child(3) {
+  grid-column: span 2;
+} */
