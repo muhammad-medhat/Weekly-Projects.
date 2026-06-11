@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.team {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;               /* allows wrapping */
+  gap: 20px;                     /* space between cards */
+  justify-content: center;       /* horizontal alignment */
+  align-items: stretch;          /* equal height cards */
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;        /* stack content vertically */
+
+  flex-basis: 220px;             /* preferred width */
+  flex-grow: 1;                  /* expand */
+  flex-shrink: 1;                /* shrink */
+
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card span {
+  font-size: 14px;
+  color: gray;
+}
+
+.card p {
+  flex-grow: 1;                  /* pushes button down */
+  margin: 10px 0;
+}
+
+.card button {
+  padding: 8px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* using order to change visual position */
+.highlight {
+  order: -1;                     /* appears first */
+}
